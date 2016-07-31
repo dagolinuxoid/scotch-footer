@@ -1,0 +1,151 @@
+.site-footer__content {
+  padding: 60px 0;
+  background: #333;
+  line-height: 1.63;
+}
+
+/* present - main part */
+
+.site-footer__present {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 65px;
+}
+
+.site-footer__board {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.site-footer__category a {
+  display: block;
+  text-decoration: none;
+  color: #fff; 
+  padding: 0 5px;
+  opacity: .69;
+  text-align: center;
+}
+
+.site-footer__category a:hover {
+  opacity: 1;
+}
+
+.site-footer__title {
+  margin-bottom: 5px; 
+}
+
+@media (min-width: 820px ) {
+  .site-footer__present {
+    flex-wrap: nowrap;
+  }
+  .site-footer__board {
+    width: 25%;
+  }
+  .site-footer__category a {
+    text-align: left;
+  }
+}
+
+.profile-spot { 
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  /*background: transparent;*/
+  position: relative;
+}
+
+.profile-spot::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #636363;
+  /*border: 15px solid #636363; It's redundant isn't it?*/
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: transform .45s cubic-bezier(.32,1.25,.375,1.15);
+}
+
+.profile-spot .img {
+  /* display: block; cmon It's redundant ps. position absloute is here */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 15px solid #4a4949;
+  border-radius: 50%;
+  background: #4a4949 no-repeat url("https://scotch.io/wp-content/themes/scotchpress/img/logo-large.png") center;
+  background-size: contain;
+}
+
+.profile-spot:hover::before {
+  background-color: #F38B72;
+  transform: scale(1.18);
+}
+
+/* social section ~ I did it slightly differently - you can compare*/
+
+.site-footer__social {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.social-link {
+  display: inline-block;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background: #636363;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+.social-link + .social-link {
+  margin-left: 15px;
+}
+
+.social-link:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.social-link:hover .social-icon {
+  background: #4A4949;
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  background: #636363;
+  border-radius: 50%;
+  transform: scale(.9);
+  transition: all .3s ease;
+  padding-top: 16px; /* I know this is ugly and lazy though */
+ }
+
+/* misc content */
+
+.site-footer__misc {
+  text-align: center;
+}
+
+.site-footer__misc a {
+  color: #fff;
+  opacity: .69;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.site-footer__misc a:hover {
+  color: #c33;  /* creativitY :-) */
+}
+
+.site-footer__misc p {
+  margin-bottom: 0;
+  color: #524C4C;
+  font-size: 13px;
+}
+

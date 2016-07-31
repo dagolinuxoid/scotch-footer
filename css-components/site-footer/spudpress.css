@@ -1,0 +1,33 @@
+.spudpress {
+  background: #272727;
+  text-align: center;
+  padding: 150px 15px;
+}
+
+.spudpress__idea {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: rgba(255, 255, 255, .9);
+  letter-spacing: -.01em;
+  font-family: acumin-pro, Helvetica, sans-serif;
+}
+
+.spudpress__strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.spudpress__link {
+  color: #f38b72;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.spudpress__link:hover {
+  color: #ef6443;
+}
+
+.fa-heart {
+  color: #ff5b5b;
+}
+

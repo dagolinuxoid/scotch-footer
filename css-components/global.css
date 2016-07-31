@@ -1,0 +1,32 @@
+/* don't look too much on syntax - I've turned off style-lint due to pesky lags :) */
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  color: ;
+}
+
+p,h1,h2,h3 {
+  margin-top: 0;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 820px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* semi-global : FOOTER section */
+
+.site-footer__content {
+  font-family: Arial, serif;
+}
